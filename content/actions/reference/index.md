@@ -11,13 +11,17 @@ children:
   - /events-that-trigger-workflows
   - /workflow-commands-for-github-actions
   - /variables-reference
+  - /secrets-reference
   - /evaluate-expressions-in-workflows-and-actions
   - /contexts-reference
-  - /metadata-syntax-for-github-actions
+  - /dependency-caching-reference
+  - /metadata-syntax-reference
   - /actions-limits
+  - /reusable-workflows-reference
+  - /github_token-reference
   - /dockerfile-support-for-github-actions
-  - /supported-architectures-and-operating-systems-for-self-hosted-runners
+  - /github-hosted-runners-reference
+  - /self-hosted-runners-reference
   - /usage-limits-for-self-hosted-runners
   - /supplemental-arguments-and-settings
 ---
-

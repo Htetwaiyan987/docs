@@ -9,9 +9,11 @@ children:
   - /about-workflows
   - /variables
   - /avoiding-duplication
+  - /reusable-workflows
   - /about-custom-actions
   - /contexts
   - /expressions
+  - /dependency-caching
   - /about-monitoring-workflows
   - /notifications-for-workflow-runs
   - /about-troubleshooting-workflows

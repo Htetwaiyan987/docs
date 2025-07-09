@@ -1,7 +1,7 @@
 import type { NextFunction, Response } from 'express'
 
 import patterns from '@/frame/lib/patterns.js'
-import { pathLanguagePrefixed } from '@/languages/lib/languages.js'
+import { pathLanguagePrefixed } from '@/languages/lib/languages'
 import { deprecatedWithFunctionalRedirects } from '@/versions/lib/enterprise-server-releases.js'
 import getRedirect from '../lib/get-redirect.js'
 import { defaultCacheControl, languageCacheControl } from '@/frame/middleware/cache-control.js'
@@ -67,7 +67,7 @@ export default function handleRedirects(req: ExtendedRequest, res: Response, nex
       // The `req.context.currentVersion` is just the portion of the URL
       // pathname. It could be that the currentVersion is something
       // like `enterprise` which needs to be redirected to its new name.
-      redirectTo = getRedirect(redirectTo, req.context)
+      redirectTo = getRedirect(redirectTo, req.context) || redirectTo
     }
 
     redirectTo += `/search?${sp.toString()}`
